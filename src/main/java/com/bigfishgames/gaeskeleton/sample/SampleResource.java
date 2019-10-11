@@ -21,7 +21,7 @@ public class SampleResource {
 	@GetMapping("/get/{id}")
 	public SampleGetResponse sampleGet(@PathVariable Long id) {
 		SampleGetResponse response = new SampleGetResponse();
-		response.setMessage("sampleGet: " + id);
+		response.setMessage("sampleGet: " + id + " revision1");
 
 		return response;
 	}
